@@ -1,0 +1,14 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app\u001b[C\u001b[Cjs\u001b[D\u001b[D\u001b[\u001b[C\u001b\u001b[C\u001b\u001b[B\u001b[A\u001b[C\u001b[C\u001b[.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
