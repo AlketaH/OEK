@@ -1,4 +1,105 @@
-body{
-	background-color:yellow;
+
+.r1{
+	padding-bottom: 15px;
+	background-color: #58D68D;
+	font-color: #FDFEFE;
+	font-family: Montserrat;
+
+}
+h1{
+	color:#FDFEFE;
+	text-align: center;
+
 	
+}
+
+.divat { 
+top-padding: 25px;
+background color: yellow; 
+
+
+}
+input[type=text] {
+	border:none;
+
+	padding:15px;
+	border-bottom: 1px solid #D5D8DC;
+}
+select{
+	border:none;
+	width:200px;
+	padding:15px;
+	border-bottom: 1px solid #D5D8DC;
+	
+}
+input[type=password] {
+	border:none;
+	padding:15px;
+	border-bottom: 1px solid #D5D8DC;;
+}
+input[type=email] {
+	border:none;
+	padding:15px;
+	border-bottom: 1px solid #D5D8DC;
+}
+input[type=submit]{
+	 font-family:Montserrat;
+ font-size: 13px;
+ 	color:#ffffff;
+ 	font-weight:bold;
+	background-color:#00b359;
+	top-margin: 18px;
+	width: 200px;
+	border:1px solid #D5D8DC;
+	padding:15px;
+	border-radius: 20px;
+}
+input[type=reset]{
+	 font-family:Montserrat;
+ font-size: 13px;
+ color:#999999;
+ 	font-weight:bold;
+	background-color: #ffffff;
+	border:1px solid #D5D8DC;
+	top-margin: 18px;
+	width: 200px;
+	padding:15px;
+	border-radius: 20px;
+}
+
+#dropdownMenu1{	
+width: 200px;
+height: 49px;
+padding-left:13;
+ border: none;
+background-color: #ffffff;
+ font-family:Montserrat;
+ font-size: 13px;
+ text-align: left;
+	border-bottom: 1px solid #D5D8DC;
+
+
+
+}
+.dropdown{ 
+	border: none;
+ }
+.r1{
+	padding-top: 2px;
+}
+.container{
+	margin-top: 70px;
+}
+.dropdown {
+    font-size: 16px;
+    font-family: Montserrat;
+    border: none;
+ 
+
+}
+.but{
+
+	background-color: none;
+	font-family: Montserrat;
+
 }

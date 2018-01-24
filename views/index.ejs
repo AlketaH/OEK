@@ -2,26 +2,79 @@
 <% include partials/header %>
 
 
+<form method="POST" name="form" action="/todos/add"  onsubmit="return validateForm();">
+   
+   
+   
+   <div class="r1">
+ <h1> Register Company Form </h1>
+ </div>
+<div class= "container">
+  <div clas="row">
+ <div class= "col-md-3 col-md-offset-3 divat">
+    <form method="POST" action="/todos/add">
+    <input type="text" name="company" class placeholder ="Company Name"<autofocus><br>
+	<select id ="municipality" name="municipality" placeholder="Municipality" required>
+	<option disabled  selected>Municipality </option>
+	<option value ="gjakove" >Gjakove </option>
+	<option value ="mitrovice" >Mitrovice </option>
+	<option value ="prishtine" >Prishtine </option>
+	<option value ="gjilan" >Gjilan</option>
+	<option value ="ferizaj" >Ferizaj </option>
+	<option value ="prizren" >Prizren</option>
+	<option value ="peje" >Peje</option>
+ </select>
+ 
+	<input type="password" name="password" placeholder= "Password"><br>
+	<input type="text" name="bussines" placeholder="Bussiness Registation Nr">
+	<br> <br> <br>
+	<input type="submit" value="SUBMIT" >
 
-<h3>Add Todo</h3>
-<form method="POST" action="/todos/add">
-   <div>
-      <label>Todo title: </label>
-      <input type="text" name="title" placeholder="Add title">
-   </div>
-   <div>
-      <label>Todo description: </label>
-      <textarea name="description" placeholder="Add description">
+
+ </div>
+
+ 
+ <div class= "col-md-3 col-md-offset-1 divat">
+
+ <input type= "text" name="cadress" placeholder="Company Address">
+ <input type ="email" name="email" placeholder="Email">
+ <input type="text" name ="web" placeholder = "Webside">
+ <textarea name="desc" placeholder="Bussiness Descprition">
       </textarea>
-   </div>
-   <button type="submit">Submit</button>
-</form>
-<h3> All Todos:</h3>
-<ol>
-<% docs.map(function(doc) { %>
-  <li><%= doc.title + ' ' + doc.description %> <a href="/todos/<%=doc._id%>"> Show</a> <a href ="/todos/edit/<%= doc._id %>">Edit</a> <a href ="/todos/delete/<%= doc._id %>">Delete</a></li>
-<% }); %>
-</ol>
+	  </form>
+ <br> <br> <br>
+  <input type="reset" value="RESET">
+
+ 
+ </div>
+
+ </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+   
+   
+   
+   <center>
+   <br>
+   <br>
+   <br>
+   <a href="/view">View Page</a>	
+  
+
 
 <% include partials/footer %>
 

@@ -43,6 +43,17 @@ app.get('/', function(req, res){
 	
 });
 
+app.get('/view', function(req, res){
+	todos.find({}).toArray(function(err, docs){
+		if(err){
+			console.log(err);
+		}
+		res.render('view', {docs: docs});
+	});
+	
+	
+});
+
 
 app.get('/todos/:id', function(req, res){
 	var id =objectId(req.params.id);
@@ -56,7 +67,7 @@ app.get('/todos/:id', function(req, res){
 });
 
 app.post('/todos/add', function(req, res){
-	todos.insert({title: req.body.title, description: req.body.description}, function (err, result){
+	todos.insert({company: req.body.company, municipality: req.body.municipality, password: req.body.password, bussiness: req.body.bussiness,  address: req.body.cadress,email: req.body.email, link: req.body.web, description: req.body.desc}, function (err, result){
 		if(err){
 			console.log(err);
 		}
@@ -79,7 +90,7 @@ app.get('/todos/edit/:id', function(req, res){
 //updaten ne input te titles
 app.post('/todos/update/:id', function(req, res){
 	var id = objectId(req.params.id);
-	todos.updateOne({_id: id}, {$set: {title: req.body.title, description: req.body.description}}, function(err, result){
+	todos.updateOne({_id: id}, {$set: {company: req.body.company, municipality: req.body.municipality, password: req.body.password, bussiness: req.body.bussiness, address: req.body.cadress,email: req.body.email, link: req.body.web, description: req.body.desc}}, function(err, result){
 		if(err){
 			console.log(err);
 		}else{

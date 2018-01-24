@@ -1,0 +1,39 @@
+<% include partials/header %>
+
+   <div class="r1">
+ <h1> Datas </h1>
+ </div>
+
+
+
+
+
+<table border="1px"  style="width:100%">
+
+<th>Name:</th>
+<th>Municipality:   </th>
+<th>Password</th>
+<th>Business nr</th>
+<th>Adress:</th>
+<th>Email:</th>
+<th>Website:</th>
+<th>Description:</th>
+<th>Option:</th>
+<% docs.map(function(doc) { %>
+  <tr>
+    <td><%= doc.company %></td>
+    <td><%= doc.municipality %></td>
+    <td><%= doc.password %></td>
+    <td><%= doc.bussiness %></td>
+    <td><%= doc.address %></td>
+    <td><%= doc.email %></td>
+    <td><%= doc.link %></td>
+    <td><%= doc.description %></td>
+    <td><a href="/todos/<%=doc._id%>">Show</a> <a href ="/todos/edit/<%= doc._id %>">Edit</a> <a href ="/todos/delete/<%= doc._id %>">Delete</a></td>
+	
+  </tr>
+  <% }); %>
+<table>
+
+
+<% include partials/footer %>

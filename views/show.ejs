@@ -1,4 +1,14 @@
+<% include partials/header %>
 
-<h2> <%=doc.title %></h2>
-<p><%=doc.description %>
-</p>
+
+<p> <b>Company Name: </b> <%= doc.company %> </p>
+<p><b>Municipality: </b> <%=doc.municipality %></p>
+<p><b>Password: </b> <%=doc.password %></p>
+<p><b>Bussiness Number: </b><%= doc.bussiness %></p>
+<p><b>Address: </b> <%= doc.address %></p>
+<p><b>Email: </b><%= doc.email %></p>
+<p><b>Website: </b> <%= doc.link %></p>
+<p><b>Description: </b><%= doc.description %></p>
+
+
+<% include partials/footer %>
